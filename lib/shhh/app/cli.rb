@@ -161,7 +161,7 @@ module Shhh
           h             = opts.to_hash
           supplied_opts = h.keys.select { |k| h[k] }.join(', ')
           error type:    'Options Error',
-                details: 'Unable to determined what command to run',
+                details: 'Unable to determine what command to run',
                 reason:  "You provided the following options: #{supplied_opts.bold.yellow}",
                 comments: opts.to_s
         else
